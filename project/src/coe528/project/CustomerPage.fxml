@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #27274d;">
+         <children>
+            <AnchorPane layoutX="250.0" prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #f5f9fa;">
+               <children>
+                  <TextField fx:id="ldeposit" layoutX="51.0" layoutY="66.0" prefHeight="24.0" prefWidth="150.0" promptText="amount">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button defaultButton="true" layoutX="51.0" layoutY="92.0" mnemonicParsing="false" onAction="#depositButton" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #dddddd; -fx-border-color: #dddddd;" text="deposit" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Yu Gothic Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="85.0" layoutY="29.0" prefHeight="43.0" prefWidth="82.0" text="DEPOSIT" textFill="#777777">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lwithdraw" layoutX="51.0" layoutY="168.0" prefHeight="24.0" prefWidth="150.0" promptText="amount">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button defaultButton="true" layoutX="51.0" layoutY="194.0" mnemonicParsing="false" onAction="#withdrawButton" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #dddddd; -fx-border-color: #dddddd;" text="withdraw" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Yu Gothic Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="71.0" layoutY="131.0" prefHeight="43.0" prefWidth="110.0" text="WITHDRAW" textFill="#777777">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lpurchase" layoutX="50.0" layoutY="272.0" prefHeight="24.0" prefWidth="150.0" promptText="amount">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button defaultButton="true" layoutX="50.0" layoutY="298.0" mnemonicParsing="false" onAction="#purchaseButton" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #dddddd; -fx-border-color: #dddddd;" text="purchase" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Yu Gothic Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="75.0" layoutY="229.0" prefHeight="43.0" prefWidth="103.0" text="PURCHASE" textFill="#777777">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button defaultButton="true" layoutX="52.0" layoutY="338.0" mnemonicParsing="false" onAction="#clogout" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #dddddd; -fx-border-color: #dddddd;" text="log out" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Yu Gothic Regular" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="197.0" fitWidth="202.0" layoutX="30.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/banklogo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label2" layoutX="31.0" layoutY="246.0" text="Welcome to Reyari Banking. " textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="263.0" text="Deposit, withdraw, or make online purchases." textFill="#ebebeb">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="293.0" text="LEVEL:" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="317.0" text="BALANCE:" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="level" layoutX="112.0" layoutY="293.0" prefHeight="17.0" prefWidth="116.0" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance" layoutX="134.0" layoutY="317.0" prefHeight="17.0" prefWidth="116.0" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cstatus" layoutX="37.0" layoutY="341.0" prefHeight="17.0" prefWidth="195.0" textFill="#b01515">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
